@@ -108,10 +108,11 @@ p{
    .menu-links li{
     list-style: none;
   }
-    
+   
    .menu-links.open{
     max-height: 100%;
     top:72px;
+
    }
    
    .hamburger-icon.open span:nth-child(1) {
@@ -132,9 +133,13 @@ p{
    .hamburger-icon span:nth-child(1){
     transition: all 0.3s ease-in-out;
     transform: none;
+
+  
    }
    .hamburger-icon span:nth-child(2){
-    opacity: 1;
+    top: 50%;
+    opacity: 1; 
+    transform: translateY(-50);
    }
    .hamburger-icon span:nth-child(3){
     transition: all 0.3s ease-in-out;
@@ -210,6 +215,5 @@ p{
         border: rgb(53,53,53) 0.1rem solid;
      }
   
-
 
 
