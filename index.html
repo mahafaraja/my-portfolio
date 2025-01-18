@@ -29,15 +29,59 @@
           <span></span>
           <span></span>
          </div>
-              <div class="menu-links">
-                <li><a href="#about" onclick="toggleMenu()">about</a></li>
-                <li><a href="#experience" onclick="toggleMenu()">experiance</a></li>
-                <li><a href="#projects" onclick="toggleMenu()">projects</a></li>
-                <li><a href="#contact" onclick="toggleMenu()">contact</a></li>
+          
+         <div class="menu-links">
+            <li><a href="#about" onclick="toggleMenu()">about</a></li>
+            <li><a href="#experience" onclick="toggleMenu()">experiance</a></li>
+            <li><a href="#projects" onclick="toggleMenu()">projects</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">contact</a></li>
+
 
             </div>
       </div>
    </nav>
+   <section id="profile">
+    <div class="section--pic-container">
+          <img src="/assets/profile(round).png" 
+          alt="farajamaha's profile picture">
+
+    </div>
+    <div class="section__text">
+      <p class="section__text-p1">hi, I'm </p>
+      <h1 class="title">faraja maha</h1>
+      <p class="section__text-p2">a front end developer</p>
+    <div class="btn__container">
+
+       <button 
+       class="btn-color1"
+       id="btn-cv"
+       onmouseover="buttonHover()" 
+       onclick="window.open('/assets/cv.doc')">
+         download cv
+       </button>
+
+       <button 
+       class="btn-color2"
+       id="btn-contact"
+       onmouseover="buttonHover()" 
+       onclick="location('./#contact')" >
+         contact info 
+       </button>
+
+    </div>
+    <div class="section__socials">
+    <img  src="/assets/linkedin-with-circle.512x512.png" 
+    alt="my linkin profile" 
+    class="icon" 
+    onclick="location.href='https://www.linkedin.com/login'">
+
+    <img src="/assets/github.512x500.png" 
+    alt="my github account" 
+    class="icon" 
+    onclick="location.href='https://github.com/mahafaraja'">
+    </div>
+    </div>
+   </section>
     <script src="script.js"></script>
 </body>
 </html>
