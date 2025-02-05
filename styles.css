@@ -304,7 +304,7 @@ p{
     .experience-details-container{
       display: flex;
       justify-content: center;
-      flex-direction: column;
+      flex-direction: row;
       gap: 2rem;
       
     }
@@ -319,8 +319,9 @@ p{
     }
     article{
       display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
       justify-content: space-around;
-      width: 10rem;
       gap: 2rem;
 
     }
@@ -331,9 +332,25 @@ p{
     #projects{
       position: relative;
     }
+    .all-projects{
+        display: flex;
+        gap: 2rem;
+        justify-content: center;
+        margin-top: 2rem;
+        flex-wrap: wrap;
+    }
     .color-container{
-      border: rgb(163,163,163);
       background-color: rgb(250,250,250);
+      
+    }
+    .project-title{
+        margin: 1rem;
+        color: black;
+    }
+    .project-btn{
+        color: black;
+        border-color: rgb(163,163,163);
+
     }
 
 
@@ -356,5 +373,26 @@ p{
       display: flex;
       justify-content: center;
       border-radius: 2rem;
-      border: ;
+      border: rgb(53,53,53) 0.1rem solid;
+      border-color: rgb(163,163,163);
+      background: rgb(250,250, 250);
+      margin: 2rem auto;
+      padding: 0.5rem;
+    }
+    .contact-info-container p{
+        font-size: large;
+    }
+    .contact-icon{
+        cursor: pointer;
+        /* height: 10rem; */
+    }
+
+    /* FOOTER BRO! */
+    footer{
+        height: 26hv;
+        margin: 1rem;
+    }
+    footer p
+    {
+        text-align: center;
     }
