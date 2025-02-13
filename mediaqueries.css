@@ -6,3 +6,26 @@
         display: flex;
     }
 }
+
+@media screen and (max-width: 580px) {
+    #hamburger-nav{
+        /* justify-content:end; */
+    }
+    #profile {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    }
+    .section-container{
+        display: flex;
+        flex-direction: column;
+    }
+    /* the the about me text in the aboutme section */
+    .text-container{
+        width: 50%;
+        text-align: center;
+        text-wrap:wrap;
+    }
+    
+}

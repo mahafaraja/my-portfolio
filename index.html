@@ -43,6 +43,7 @@
    <section id="profile">
     <div class="section--pic-container">
           <img src="/assets/profile(round).png" 
+          class="section--pic-container"
           alt="farajamaha's profile picture">
 
     </div>
@@ -64,7 +65,7 @@
        class="btn-color2"
        id="btn-contact"
        onmouseover="buttonHover()" 
-       onclick="location('#contact')" >
+       onclick="window.location.href = '#contact'" >
          contact info 
        </button>
 
@@ -73,7 +74,7 @@
     <img  src="/assets/linkedin-with-circle.512x512.png" 
     alt="my linkin profile" 
     class="icon contact-icon" 
-    onclick="location.href='https://www.linkedin.com/login'">
+    onclick="location.href='https://www.linkedin.com/in/faraja-maha-77151134b/'">
 
     <img src="/assets/github.512x500.png" 
     alt="my github account" 
@@ -120,10 +121,10 @@
             </div>
 
             <div class="text-container"> 
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-               Inventore corrupti nemo expedita tenetur doloribus libero atque voluptates,
-                illo vero. Aut reprehenderit iste hic earum eaque dicta deserunt iusto recusandae 
-                nemo. </div>
+             <p> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Inventore corrupti nemo expedita tenetur doloribus libero atque voluptates,
+               illo vero. Aut reprehenderit iste hic earum eaque dicta deserunt iusto recusandae 
+               nemo.</p> </div>
          </div>
          
        
@@ -132,7 +133,7 @@
         <img class="arrow-down"
         width="40px"
         height="50px"
-        onclick="Location.href='/#projects'"
+        onclick="location.href='/#experience'"
         src="/assets/fast-arrow-down.396x512.png"
              alt="to the next section">
      </div>
@@ -290,7 +291,7 @@
    <img class="arrow-down"
    width="40px"
    height="50px"
-   onclick="Location.href='/#projects'"
+   onclick="location.href='/#projects'"
    src="/assets/fast-arrow-down.396x512.png"
         alt="to the next section">
    </section>
@@ -352,7 +353,7 @@
               <img class="arrow-down"
               width="40px"
               height="50px"
-              onclick="Location.href='/#contact'"
+              onclick="location.href='/#contact'"
               src="/assets/fast-arrow-down.396x512.png"
                    alt="to the next section">
             </div>
@@ -366,14 +367,16 @@
                 <img 
                 class="icon contact-icon"
                  src="assets/email-circle-fill.512x512.png"
-                 alt="email">
-                 <p><a href="mahafaraja@gmail.com"></a></p>
+                 alt="email"
+                 onclick="location.href='mailto:mahafaraja@gmail.com'">
+                 <p><a href="mailto:mahafaraja@gmail.com">email</a></p>
                 
                  <img 
                  class="icon contact-icon"
                   src="assets/104452_linkedin_icon.png"
-                  alt="linkedin">
-                  <p><a href="linkin.com/faraja"></a></p>
+                  alt="linkedin"
+                  onclick="location.href='https://www.linkedin.com/in/faraja-maha-77151134b'">
+                  <p><a href="linkin.com/faraja">linkin</a></p>
          </div>
     </div>
    </section>
