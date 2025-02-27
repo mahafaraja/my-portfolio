@@ -1,14 +1,21 @@
-@media screen and (max-width:1400px){
+@media screen and (max-width:750px){
     #profile{
         height:83vh;
         margin-bottom: 6rem;
     }
     .about-container{
         flex-wrap: wrap;
+        
+
+}
+@media screen and (max-width:990px){
+    .arrow-down{
+     position: absolute;
+     right: -10rem;
+     bottom: 2.5rem;
     }
 }
-
-@media screen and (max-width:1200px){
+@media screen and (max-width:840px){
     .desktop-nav{
         display: none;
     }
@@ -40,7 +47,7 @@
     }
     .section__pic-container,
     .about-pic{
-        width: 275px;
+        width: 300px;
         height: 275px;
         margin:0 auto 2rem;
     }
@@ -48,9 +55,9 @@
         margin-top:0;
     }
  }
- @media screen and (max-width:1200px){
+ @media screen and (max-width:700px){
     #contact , footer{
-        height: 42vh;
+        height: 45vh;
     }
     #profile{
         height: 83vh;
@@ -104,4 +111,6 @@
     }
 
  }
+}
+
 

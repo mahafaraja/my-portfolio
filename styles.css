@@ -33,6 +33,7 @@ p{
    nav, 
    .nav-links{
     display: flex;
+    text-align: center;
    }
    nav {
     justify-content: space-around;
@@ -417,7 +418,7 @@ p{
         height: 26hv;
         margin:1rem;
     }
-    footer p,li
+    footer p
     {
         text-align: center;
     }
