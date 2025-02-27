@@ -284,14 +284,14 @@ p{
       border: 1px solid rgb(53, 53, 53 );
       border-radius: 2rem;    
     }
-   
     .section__pic-container {
       width: 400px;
       height: 400px;
-      margin: auto 0;
+      margin: 0 ;
       position: relative;
        
     }
+   
     .about-pic{
       
       height: 400px;
@@ -301,7 +301,13 @@ p{
     }
     .text-container{
      color: rgb(0, 0, 0);
-     margin-top:0.5rem;
+     /* margin-top:0.5rem; */
+     align-content: center;
+    }
+    .text-container p{
+      text-align: center;
+
+
     }
 
     /* EXPERIENCE  */
@@ -349,7 +355,7 @@ p{
     /* PROJECTS */
 
     #projects{
-      position: relative;
+      position: relative; 
     }
     .all-projects{
         display: flex;
@@ -409,9 +415,9 @@ p{
     /* FOOTER BRO! */
     footer{
         height: 26hv;
-        margin: 1rem;
+        margin:1rem;
     }
-    footer p
+    footer p,li
     {
         text-align: center;
     }

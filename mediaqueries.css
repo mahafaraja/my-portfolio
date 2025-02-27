@@ -1,31 +1,107 @@
-@media screen and (max-width:750px){
+@media screen and (max-width:1400px){
+    #profile{
+        height:83vh;
+        margin-bottom: 6rem;
+    }
+    .about-container{
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width:1200px){
     .desktop-nav{
         display: none;
     }
     #hamburger-nav{
         display: flex;
     }
-}
-
-@media screen and (max-width: 580px) {
-    #hamburger-nav{
-        /* justify-content:end; */
+    #experience ,
+    .experience-details-container{
+        display: block;   
     }
-    #profile {
-        display: flex;
-        flex-direction: column;
-    }
-    
-    
+    #profile,
     .section-container{
-        display: flex;
-        flex-direction: column;
+        display: block;
     }
-    /* the the about me text in the aboutme section */
-    .text-container{
-        width: 100%;
+    .section,
+    .section-container{
+        height: fit-content;
+    }
+    .arrow-down{
+        display: none;
+    }
+    section{
+        margin:0 5%;
+    }
+    .section--pic-container{
+        width: 275px;
+        height: 275px;
+        margin:0 auto 2rem;
+    }
+    .section__pic-container,
+    .about-pic{
+        width: 275px;
+        height: 275px;
+        margin:0 auto 2rem;
+    }
+    .about-container{
+        margin-top:0;
+    }
+ }
+ @media screen and (max-width:1200px){
+    #contact , footer{
+        height: 42vh;
+    }
+    #profile{
+        height: 83vh;
+        margin-bottom: 0;
+    }
+    footer nav{
+        height: fit-content;
+        margin-bottom: 2rem;
+    }
+    .contact-info-upper-container,
+    .about-container,
+    .btn__container{
+        flex-wrap: wrap;
+    }
+    .contact-info-container{
+        margin:0;
+    }
+    .contact-info-container,
+    .nav-links,
+    p,a,li{
+        font-size: 1rem;
+    }
+    .experience-sub-title{
+        font-size: 1.5rem;
+    }
+    .logo{
+        font-size: 1.5rem;
+    }
+    .nav-links{
+        flex-direction:column;
+        gap:1rem;
+        margin-bottom:1.2rem;
         text-align: center;
-        text-wrap:wrap;
     }
-    
-}
+    .section--pic-container{
+        width: auto;
+        width: 46vh;
+    }
+    .section__text-p2{
+        font-size: 1.2rem;
+    }
+    .section__text-p1{
+        font-size: 1.2rem;
+    }
+    .title{
+        font-size: 2rem;
+    }
+    .text-container p{
+        font-size: 1rem;
+        text-align:justify;
+    }
+
+ }
+
