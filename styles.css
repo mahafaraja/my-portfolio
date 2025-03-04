@@ -190,6 +190,7 @@ p{
      .title{
         font-size: 3rem;
         text-align: center;
+        margin-bottom: 1rem;
      }
      .section__socials{
         
@@ -328,27 +329,26 @@ p{
 
     }
     .experience-details-container{
-      display: flex;
       justify-content: center;
-      flex-direction: row;
+      display: flex;
+      flex-direction:row;
       gap: 2rem;
       
     }
     .article-container{
       display: flex;
-      text-align: inherit;
+      text-align: center;
       flex-direction: column;
       float: row;
       gap: 1rem;
       justify-content: space-around;
-      margin-left: 2rem;
     }
-    article{
-      display: flex;
-      flex-direction: row;
+     article{
+      display: flex; 
+      flex-direction:column;
       flex-wrap: wrap;
       justify-content: space-around;
-      gap: 2rem;
+      column-gap: 1rem;
 
     }
     
