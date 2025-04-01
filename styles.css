@@ -8,8 +8,23 @@
     padding: 0;
 
 }
-body{
 
+ /* colour lib */
+ :root{
+   --background-color:rgb(238, 236, 229);
+   --boader-line-color:rgb(61, 163, 107);
+   --all-title-color:rgb(33, 33, 33);
+   --all-inside-title:rgb(52, 52, 52);
+   --paragraph-color:rgb(85,85,85);
+   --link-color:rgb(0, 0, 0);
+   --container-color: rgb(240, 240, 240);
+   --logo-text-color:rgb(24, 24, 24);
+   --button-hover-color:rgb(28, 28, 28);
+   --skills-color:rgba(71, 71, 71, 0.703);
+   --button-color:rgb(238, 236, 229);
+}
+body{
+    background-color: var(--background-color);
     font-family: "Poppins", sans-serif;
 }
 
@@ -18,7 +33,10 @@ html{
 }
 
 p{
-    color: rgb(85,85,85);
+    color: var(--paragraph-color);
+}
+h3{
+  color: var(--skills-color);
 }
    /* logo */
    .logo:hover{
@@ -46,7 +64,7 @@ p{
     font-size: 1.1rem;
    }
    a{
-    color: black;
+    color: var(--link-color);
     text-decoration: none;
     text-decoration-color: white;
    }
@@ -61,6 +79,7 @@ p{
    }
    .logo:hover{
     cursor: default;
+    color: var(--logo-text-color);
    }
 
    /* HAMBURGER-MENU */
@@ -102,7 +121,7 @@ p{
     padding: 5px;
     text-align: center;
     font-size: 1.5rem;
-    color: black;
+    color:var(--link-color);
     text-decoration: none;
     transition: all 0.3 ease-in-out;
    }
@@ -180,6 +199,7 @@ p{
      }
      .section__text-p1{
         text-align: center;
+        font-weight:bolder;
         margin-bottom: 1rem;
      }
      .section__text-p2{
@@ -191,6 +211,7 @@ p{
         font-size: 3rem;
         text-align: center;
         margin-bottom: 1rem;
+        color:var(--all-title-color) ;
      }
      .section__socials{
         
@@ -218,26 +239,26 @@ p{
         width: 8rem;
         border-radius: 2rem;
         transition: all 300ms ease-in-out;
-        border: rgb(53,53,53) 0.1rem solid;
+        border: var(--boader-line-color) 0.1rem solid;
      }
      .btn-color2:hover,
      .btn-color1 
      {
-      color: white;
-      background-color: black;
+      color: var(--button-color);
+      background-color: var(--button-hover-color);
      }
      .btn-color1:hover,
      .btn-color2 
      {
       color: black;
-      background-color: white;
+      background-color: var(--button-color);
      }
      .btn-color1:hover + .btn-color2{
-      background-color: white;
+      background-color: var(--button-color);
       color: black;
      }
      .btn-color2:hover + .btn-color1{
-      background-color: white;
+      background-color: var(--button-color);
       color: black;
      }
      /* ABOUT SECTION  */
@@ -283,7 +304,7 @@ p{
       flex: 1;
       text-align: center;
       text-wrap: wrap;
-      border: 1px solid rgb(53, 53, 53 );
+      border: 1px solid var(--boader-line-color);
       border-radius: 2rem;    
     }
     .section__pic-container {
@@ -302,7 +323,7 @@ p{
      
     }
     .text-container{
-     color: rgb(0, 0, 0);
+     color:var(--paragraph-color);
      /* margin-top:0.5rem; */
      align-content: center;
     }
@@ -322,7 +343,7 @@ p{
     }
 
     .experience-sub-title{
-      color: rgb(85, 85,85);
+      color:var(--all-inside-title);
       font-weight: 600px;
       font-size: 1.75rem;
       margin-bottom:1rem ;
@@ -332,6 +353,7 @@ p{
       justify-content: center;
       display: flex;
       flex-direction:row;
+      flex-wrap: wrap;
       gap: 2rem;
       
     }
@@ -339,16 +361,18 @@ p{
       display: flex;
       text-align: center;
       flex-direction: column;
+      flex-wrap: wrap;
       float: row;
       gap: 1rem;
       justify-content: space-around;
     }
      article{
       display: flex; 
-      flex-direction:column;
+      flex-direction:row;
       flex-wrap: wrap;
-      justify-content: space-around;
+      justify-content: center;
       column-gap: 1rem;
+      
 
     }
     
@@ -357,6 +381,7 @@ p{
 
     #projects{
       position: relative; 
+      
     }
     .all-projects{
         display: flex;
@@ -366,16 +391,16 @@ p{
         flex-wrap: wrap;
     }
     .color-container{
-      background-color: rgb(250,250,250);
+      background-color:var(--container-color);
       
     }
     .project-title{
         margin: 1rem;
-        color: black;
+        color:var(--all-inside-title);
     }
     .project-btn{
         color: black;
-        border-color: rgb(163,163,163);
+        border-color: var(--boader-line-color);
 
     }
 
@@ -399,9 +424,9 @@ p{
       display: flex;
       justify-content: center;
       border-radius: 2rem;
-      border: rgb(53,53,53) 0.1rem solid;
-      border-color: rgb(163,163,163);
-      background: rgb(250,250, 250);
+      border: var(--boader-line-color) 0.1rem solid;
+      border-color:var();
+      background: var(--container-color);
       margin: 2rem auto;
       padding: 0.5rem;
     }
@@ -421,4 +446,20 @@ p{
     footer p
     {
         text-align: center;
+    }
+
+    /* more of the skills styles */
+    .frontend-base{
+      display: flex;
+      flex-direction: row ;
+      align-items: center;
+      padding:2px;
+      justify-content: center;
+    }
+    .frontend-framework{
+      display: flex;
+      flex-direction: row ;
+      align-items: center;
+      padding:2px;
+      justify-content: center;
     }
