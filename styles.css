@@ -12,12 +12,12 @@
  /* colour lib */
  :root{
    --background-color:rgb(238, 236, 229);
-   --boader-line-color:rgb(61, 163, 107);
+   --boader-line-color:rgb(255, 255, 255);
    --all-title-color:rgb(33, 33, 33);
    --all-inside-title:rgb(52, 52, 52);
    --paragraph-color:rgb(85,85,85);
    --link-color:rgb(0, 0, 0);
-   --container-color: rgb(240, 240, 240);
+   --container-color: rgb(231, 232, 221);
    --logo-text-color:rgb(24, 24, 24);
    --button-hover-color:rgb(28, 28, 28);
    --skills-color:rgba(71, 71, 71, 0.703);
@@ -25,7 +25,7 @@
 }
 body{
     background-color: var(--background-color);
-    font-family: "Poppins", sans-serif;
+    font-family:"Poppins", sans-serif;
 }
 
 html{
@@ -189,6 +189,8 @@ h3{
         height: 400px;
         width: 400px;
         margin: auto 0;
+        border: 1px solid var(--boader-line-color);
+        border-radius: 50%;
      }
      .section__text{
         align-self: center;
@@ -312,6 +314,8 @@ h3{
       height: 400px;
       margin: 0 ;
       position: relative;
+      border: 1px solid var(--boader-line-color);
+      border-radius: 2rem;
        
     }
    

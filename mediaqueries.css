@@ -24,8 +24,10 @@
     }
     #experience ,
     .experience-details-container{
-        display: block;
-        margin: 2rem;   
+        /* display: block; */
+        margin: 2rem; 
+        gap: 1rem;
+      
     }
     #profile,
     .section-container{
