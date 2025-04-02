@@ -15,7 +15,7 @@
    --boader-line-color:rgb(255, 255, 255);
    --all-title-color:rgb(33, 33, 33);
    --all-inside-title:rgb(52, 52, 52);
-   --paragraph-color:rgb(85,85,85);
+   --paragraph-color:rgb(57, 57, 57);
    --link-color:rgb(0, 0, 0);
    --container-color: rgb(231, 232, 221);
    --logo-text-color:rgb(24, 24, 24);
@@ -37,6 +37,7 @@ p{
 }
 h3{
   color: var(--skills-color);
+
 }
    /* logo */
    .logo:hover{
@@ -93,27 +94,28 @@ h3{
    .hamburger-icon{
     display: flex;
     flex-direction:column;
-    justify-content: space-between;
+    justify-content:space-around;
     height: 24px;
     width: 30px;
     cursor: pointer;
    }
    .hamburger-icon span{
     width: 100%;
-    height: 9%;
-    background-color: black;
+    height: 15%;
+    border-radius: 8rem;
+    background-color: var(--all-title-color);
+
     transform: all 0.3 ease-in-out;
    }
    .menu-links{
     position:absolute; 
     top: 100%;
     right: 30px;
-    background-color: rgba(200, 200, 200,0); 
+    background-color: rgba(116, 116, 116, 0); 
     width: fit-content;
     overflow: hidden; 
     max-height: 0;
-    flex-direction: row !important; 
-    
+    transform: all 0.3 ease-in-out;
    }
 
    .menu-links a{
@@ -136,22 +138,23 @@ h3{
    
    .hamburger-icon.open span:nth-child(1) {
     transition: all 0.3s ease-in-out;
-    transform: rotate(45deg) translate(10px , 5px);
+    transform: rotate(45deg) translate(-7px , 15px);/*this is the second bar*/
+    width: 1.8rem;
    }
-   .hamburger-icon.open span:nth-child(2) {
+   /* .hamburger-icon.open span:nth-child(2) {
     animation: fadeOut 0.3s forwards;
-    opacity: 0;
-   }
-   .hamburger-icon.open span:nth-child(3) {
+    opacity: 0; */
+   
+   .hamburger-icon.open span:nth-child(2) {
     transition: all 0.3s ease-in-out;
-    transform: rotate(-45deg) translate(10px , -5px);
-    
+    transform: rotate(-45deg) translate(-6px , -15px);/*this is now the first bar*/
+    width: 1.8rem;
    }
 
 
    .hamburger-icon span:nth-child(1){
     transition: all 0.3s ease-in-out;
-    transform: none;
+    transform: translateX(50);
 
   
    }
@@ -159,11 +162,12 @@ h3{
     top: 50%;
     opacity: 1; 
     transform: translateY(-50);
+    width:3rem;
    }
-   .hamburger-icon span:nth-child(3){
+   /* .hamburger-icon span:nth-child(3){
     transition: all 0.3s ease-in-out;
     transform: none;
-   }
+   } */
 
     /* SECTIONS */
     section{
